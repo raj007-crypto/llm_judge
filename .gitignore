@@ -1,0 +1,7 @@
+.venv/
+chroma_db/
+server.log
+server_err.log
+.deepeval/
+__pycache__/
+*.pyc

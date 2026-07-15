@@ -73,6 +73,8 @@ class PrometheusFaithfulnessMetric(BaseMetric):
                 clean.append(line)
         return "\n".join(clean[:10]) if clean else context[:300]
 
+    #CHANGE THIS BASED ON THE APPLICATION
+
     def _build_prompt(self, question: str, answer: str, context: str) -> str:
         reference = self._build_reference(question, context)
         return (
